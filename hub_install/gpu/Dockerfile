@@ -8,4 +8,4 @@ ENV CUDA_VISIBLE_DEVICES=0
 #安装所需的库文件
 RUN pip3.7 install --upgrade pip paddlehub shapely pyclipper -i https://mirror.baidu.com/pypi/simple
 
-ENTRYPOINT ["/bin/bash","-c","hub serving start -m chinese_ocr_db_crnn_server"]
+ENTRYPOINT ["/bin/bash","-c","hub serving start -m chinese_ocr_db_crnn_server -p 8868"]

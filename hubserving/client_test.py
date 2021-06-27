@@ -17,7 +17,7 @@ import requests
 
 def cv2_to_base64(image):
     return base64.b64encode(image).decode('utf8')
-url = "http://172.16.71.234:8868/predict/chinese_ocr_db_crnn_server"
+url = "http://172.16.71.234:8868/predict/ocr_system"
 test_img_dir = '../test_files'
 headers = {"Content-type": "application/json"}
 for idx, img_file in enumerate(os.listdir(test_img_dir)):
